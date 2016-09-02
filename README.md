@@ -23,7 +23,7 @@ reaches 0. However, the only thing we're going to focus on right now is setting 
 amount of seconds left on the timer. Since bomb timers can differ, we'll pass in a prop to our `Bomb` component to
 determine what the starting count should be.
 
-1. In the `components/Bomb.js` file, create a `Bomb` React component
+1. In the `components/Bomb.js` file, create a `Bomb` React component.
 2. Its initial state should have a property `secondsLeft`.
 3. The initial value of `secondsLeft` is set by passing in a `initialCount` prop to the `Bomb` component.
 3. It should render the text `'<SECONDS_LEFT> seconds left before I go boom!'`, where `<SECONDS_LEFT>` is the value
