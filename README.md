@@ -9,7 +9,7 @@
 Let's pretend we're making an awesome slider for our new portfolio site. Naturally, we'll use React to do so! We have to
 start somewhere, so in this lab, we'll just focus on setting up the initial state of the slider.
 
-1. In the `components/ImageSlider.js` file, create an `ImageSlider` React component
+1. In the `components/ImageSlider.js` file, create an `ImageSlider` React component.
 2. Its initial state should have a property `currentSlideIndex` that starts at `0`.
 3. It should render out the text `'I am on slide <CURRENT_SLIDE>'`, where `<CURRENT_SLIDE>` is the value of 
 `currentSlideIndex`
