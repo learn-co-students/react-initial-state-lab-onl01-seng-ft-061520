@@ -14,7 +14,6 @@ Let's pretend we're making an awesome slider for our new portfolio site. Natural
 `currentSlideIndex`
 
 ## A bomb timer
-![Oldschool stuff!](http://dumpfm.s3.amazonaws.com/images/20111013/1318489549912-dumpfm-capnskull-04-someone-set-us-up-the-b mb.gif)
 
 Take a moment to think about what a bomb does and how it works. Don't get all into the nitty gritty — what we're going to focus on right now is the _timer_. Let's create a component that represents a bomb timer that counts down until it reaches 0. However, the only thing we're going to focus on right now is setting the initial state of the bomb: the amount of seconds left on the timer. Since bomb timers can differ, we'll pass in a prop to our `Bomb` component to determine what the starting count should be.
 
