@@ -21,7 +21,7 @@ describe('<ImageSlider />', function () {
 describe('<Bomb />', function () {
   const wrapper = shallow(<Bomb initialCount={120} />);
 
-  it('should set the `currentSlideIndex` to the value of the `initialCount` prop', function () {
+  it('should set the `secondsLeft` to the value of the `initialCount` prop', function () {
     expect(wrapper.state('secondsLeft'))
       .toNotBe(undefined, 'The `secondsLeft` property is not defined on the state.')
       .toEqual(120);
