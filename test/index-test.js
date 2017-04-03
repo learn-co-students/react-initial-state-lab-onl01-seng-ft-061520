@@ -1,8 +1,8 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+import React from 'react';
+import { shallow } from 'enzyme';
 
-const ImageSlider = require('../components/ImageSlider');
-const Bomb = require('../components/Bomb');
+import ImageSlider from '../components/ImageSlider';
+import Bomb from '../components/Bomb';
 
 describe('<ImageSlider />', function () {
   const wrapper = shallow(<ImageSlider/>);

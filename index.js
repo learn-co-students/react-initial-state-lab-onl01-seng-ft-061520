@@ -1,8 +1,8 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const ImageSlider = require('./components/ImageSlider');
-const Bomb = require('./components/Bomb');
+import ImageSlider from './components/ImageSlider';
+import Bomb from './components/Bomb';
 
 ReactDOM.render(
   <div>
