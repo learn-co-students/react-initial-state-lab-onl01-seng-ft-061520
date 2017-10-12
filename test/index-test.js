@@ -1,9 +1,11 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
-
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import ImageSlider from '../src/components/ImageSlider';
 import Bomb from '../src/components/Bomb';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 describe('<ImageSlider />', function () {
   const wrapper = shallow(<ImageSlider/>);

@@ -9,5 +9,5 @@ ReactDOM.render(
     <ImageSlider></ImageSlider>
     <Bomb initialCount={120} />
   </div>,
-  document.getElementById('root')
+  document.getElementById('global')
 );
