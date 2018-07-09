@@ -2,15 +2,6 @@
   "name": "updated",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-  "devDependencies": {
-    "jsdom": "^9.9.1",
-    "mocha": "^3.2.0",
-    "react-scripts": "^1.0.7",
-    "react-test-renderer": "^15.5.4",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^1.16.2"
-=======
   "babel": {
     "presets": [
       "airbnb",
@@ -18,7 +9,6 @@
       "stage-0",
       "react"
     ]
->>>>>>> wip-new-solution
   },
   "dependencies": {
     "mocha-multi": "^1.0.1",
