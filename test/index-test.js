@@ -11,6 +11,7 @@ import Bomb from '../src/Bomb'
 
 configure({ adapter: new Adapter() });
 
+
 describe('<ImageSlider />', () => {
   const wrapper = shallow(<ImageSlider />);
 
@@ -22,6 +23,7 @@ describe('<ImageSlider />', () => {
     expect(wrapper.text()).to.equal('I am on slide 0');
   });
 });
+
 
 describe('<Bomb />', () => {
   const wrapper = shallow(<Bomb initialCount={120} />);

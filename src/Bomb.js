@@ -3,10 +3,10 @@ import React from 'react';
 export default class Bomb extends React.Component {
 
   constructor(props) {
-    super() 
+    super(props) 
 
     this.state = {
-      secondsLeft: props.initialCount
+      secondsLeft: this.props.initialCount
     }
   }
 
