@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ImageSlider extends React.Component {
+export default class ImageSlider extends React.Component {
 
   constructor() {
     super() 
@@ -16,5 +16,3 @@ class ImageSlider extends React.Component {
     )
   }
 }
-
-export default ImageSlider;
