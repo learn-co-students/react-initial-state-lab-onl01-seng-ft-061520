@@ -9,7 +9,7 @@ between state and props.
 
 Follow the steps below and create two components, `ImageSlider` and `Bomb`.
 Currently, `Bomb.js` and `ImageSlider.js` don't contain any code, so if you run
-`learn`, you'll get an error. This is because our tests are trying to import and
+`learn` or `npm start`, you'll get an error. This is because our tests are trying to import and
 use these components before they've been written.
 
 So, before we continue, your first task is to create a simple components
@@ -19,7 +19,8 @@ for both `ImageSlider` and `Bomb`:
 - In the `src/Bomb.js` file, create a `Bomb` React component.
 
 These components will need a valid `render` method to allow for our tests to
-properly import and use them.
+properly import and use them. Now, if you've created valid components, you should
+be able to run `learn` to see the test results and run `npm start` to start the app.
 
 ## Image slider
 
@@ -43,10 +44,11 @@ setting the initial state of the bomb: the amount of seconds left on the timer.
 Since bomb timers can differ, we'll pass in a prop to our `Bomb` component to
 determine what the starting count should be.
 
-1.  Its initial state should have a property called `secondsLeft`.
+1.  The initial state of `Bomb` should have a property called `secondsLeft`.
 2.  The initial value of `secondsLeft` is set by passing in an `initialCount`
     prop to the `Bomb` component. Don't forget to pass the argument props into
-    the constructor (i.e., `constructor(props)`).
+    the constructor (i.e., `constructor(props)`). Open in the `index.js` file to see
+    how we are passing the `initialCount` prop to `Bomb`
 3.  It should render the text `'<SECONDS_LEFT> seconds left before I go boom!'`,
     where `<SECONDS_LEFT>` is the value of `secondsLeft`.
 4.  **If `secondsLeft` equals `0`, it should render `'Boom!'` instead.**
