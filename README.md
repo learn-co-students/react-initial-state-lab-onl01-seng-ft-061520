@@ -45,13 +45,28 @@ Since bomb timers can differ, we'll pass in a prop to our `Bomb` component to
 determine what the starting count should be.
 
 1.  The initial state of `Bomb` should have a property called `secondsLeft`.
-2.  The initial value of `secondsLeft` is set by passing in an `initialCount`
-    prop to the `Bomb` component. Don't forget to pass the argument props into
-    the constructor (i.e., `constructor(props)`). Open in the `index.js` file to see
-    how we are passing the `initialCount` prop to `Bomb`
-3.  It should render the text `'<SECONDS_LEFT> seconds left before I go boom!'`,
+2.  The initial value of `secondsLeft` should be equal to the `initialCount` 
+    prop of our `Bomb` component.
+    
+    We'll need to learn how to set an intial state _based off that component's props_. 
+    React passes a component's props as an argument into the constructor (i.e., `constructor(props)`). 
+    Remember to call `super()` on the first line of the constructor (this is
+    required in React components if we are to use `this` in the constructor).
+    Ultimately, our constructor should look something like this:
+   
+    ```js
+    constructor(props) { //props that the component gets from its parent
+      super()
+      this.state = { //define initial state with a key of 'someKey' set to the 'someValue' prop
+        someKey: props.someValue
+      }
+    }
+    ```
+3.  As an extra step for understanding, you can open in the `index.js` file to 
+    see how we are passing the `initialCount` prop to `Bomb`
+4.  It should render the text `'<SECONDS_LEFT> seconds left before I go boom!'`,
     where `<SECONDS_LEFT>` is the value of `secondsLeft`.
-4.  **If `secondsLeft` equals `0`, it should render `'Boom!'` instead.**
+5.  **If `secondsLeft` equals `0`, it should render `'Boom!'` instead.**
 
 ## Resources
 
