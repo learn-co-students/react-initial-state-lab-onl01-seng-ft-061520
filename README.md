@@ -71,4 +71,3 @@ determine what the starting count should be.
 ## Resources
 
 - [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
-
