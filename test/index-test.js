@@ -40,4 +40,4 @@ describe('<Bomb />', () => {
     const wrapper = shallow(<Bomb initialCount={0} />);
     expect(wrapper.text()).to.equal('Boom!');
   });
-});
+}); 
